@@ -1,0 +1,47 @@
+.main {
+  display: grid;
+  /* flex-direction: row;
+  justify-content: space-around;
+  margin-left: 250px;
+  margin-right: 250px;
+  width: auto;
+  height: auto; */
+  grid-template-columns: 1fr 0.5fr 1fr;
+  justify-content: space-around;
+  margin-left: 250px;
+  margin-right: 250px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: white;
+  grid-gap: 5px;
+}
+
+.subgrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 5px solid blue; */
+  text-align: center;
+  /* width: auto;
+  height: auto; */
+}
+
+.subgridmin {
+  width: 100px;
+  text-align: center;
+  border: 3px solid green;
+}
+
+.first {
+  border: 1.5px solid gray;
+  border-radius: 10%;
+  padding: 4px;
+  margin: 4px;
+}
+
+.score {
+  font-size: 1.5rem;
+}
+
+.mainscore {
+  font-size: 2rem;
+}
